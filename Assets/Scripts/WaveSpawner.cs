@@ -41,7 +41,6 @@ public class WaveSpawner : MonoBehaviour
 
     void SpawnEnemy(Types.EnemyTypes enemyType)
     {
-        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
         switch (enemyType)
         {
             case Types.EnemyTypes.Organic:
@@ -56,5 +55,6 @@ public class WaveSpawner : MonoBehaviour
             default:
                 break;
         }
+        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
     }
 }
