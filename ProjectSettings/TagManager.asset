@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - OrganicEnemy
+  - PlasticEnemy
+  - MetallicEnemy
   layers:
   - Default
   - TransparentFX

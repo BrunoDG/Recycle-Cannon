@@ -9,4 +9,11 @@ public class Types
         Plastic = 1,
         Metal = 2
     }
+
+    public enum TurretTypes: int
+    {
+        Organic = 0,
+        Plastic = 1,
+        Metal = 2
+    }
 }

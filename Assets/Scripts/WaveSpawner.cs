@@ -45,12 +45,15 @@ public class WaveSpawner : MonoBehaviour
         {
             case Types.EnemyTypes.Organic:
                 enemyPrefab.GetComponent<Renderer>().material = (Material)Instantiate(Organic);
+                enemyPrefab.tag = "OrganicEnemy";
                 break;
             case Types.EnemyTypes.Plastic:
                 enemyPrefab.GetComponent<Renderer>().material = (Material)Instantiate(Plastic);
+                enemyPrefab.tag = "PlasticEnemy";
                 break;
             case Types.EnemyTypes.Metal:
                 enemyPrefab.GetComponent<Renderer>().material = (Material)Instantiate(Metal);
+                enemyPrefab.tag = "MetallicEnemy";
                 break;
             default:
                 break;
